@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>404</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<h1>404</h1><div id="error-home"><a href="/">Click to go home</a></div>
+	<img id="bill" />
+	<footer>Made with ❤ by <a href="http://www.github.com/mrecachinas" target="_">mrecachinas</a>, <a href="http://www.github.com/alepnull" target="_">alepnull</a>, <a href="http://www.github.com/jb6zb" target="_">jb6zb</a><br>Want a <a href="demo">demo</a>?</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="../static/js/script.js"></script>
+    <script>
+        switch (Math.round(Math.random())) {
+            case 0:
+                var x = 800+Math.round(200*Math.random() - 100)
+                $('img').attr('src','http://www.fillmurray.com/g/1200/'+x);
+                break;
+            case 1:
+                $('img').attr('src','../static/img/wat.jpg')
+                        .css('display','block')
+                        .css('margin-left','auto')
+                        .css('margin-right','auto');
+                break;
+        }
+    </script>
+</body>
+</html>

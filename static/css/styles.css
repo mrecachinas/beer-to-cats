@@ -1,0 +1,96 @@
+@font-face { font-family: 'Comic Neue'; src: url('../fonts/ComicNeue-Angular-Light.woff');}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+	height:100%;
+	width:100%;
+}
+
+body {
+	background:#3ab0da!important;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+	font-family:'Comic Neue'!important;
+	text-align:center;
+	font-size:60px!important;
+	color:#000!important;
+}
+
+.wrapper {
+	display:block;
+	position:relative;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin-left: auto;
+}
+.fileUpload input.upload {
+	display:block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.btn-primary {
+	background:#3ed585!important;
+	font-family:'Comic Neue'!important;
+}
+
+#blah {
+	display:none;
+	margin-bottom:20px;
+}
+
+#bill {
+	margin-bottom:20px;
+}
+
+#error-home {
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#error-home a {
+	text-decoration:underline;
+	color:black;
+	font-family:'Comic Neue'!important;
+}
+
+#error-home a:hover {
+	color:black;
+}
+
+footer {
+	text-align:center;
+	font-family:'Comic Neue';
+	font-size:16px;
+}
+
+footer a {
+	text-decoration:underline;
+	color:black;
+}
+
+footer a:hover {
+	color:black;
+}
