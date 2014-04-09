@@ -9,7 +9,7 @@
         2. Then run `$ python get-pip.py`
 3. `$ pip install -r requirements.txt` (may require `sudo`)
 
-<h3>Errors</h3>
+<h3>Installation Errors?</h3>
 Try the [SimpleCV](https://github.com/sightmachine/simplecv#installation) github. They have a wealth of more in depth instructions for installation.
 
 <h2>Usage</h2>
@@ -27,3 +27,18 @@ There are two primary ways to use the project:
      * Restarting with reloader
     ```
 Then navigate to http://127.0.0.1:5000/ and follow the instructions on the website as you would otherwise.
+
+<h2>Demo</h2>
+
+<h2>Theory</h2>
+
+<h2>TODO</h2>
+For the project:
+- Build classifier
+- Test
+- Integrate with webapp
+
+For documentation:
+- Add to `requirements.txt`: SimpleCV, OpenCV, Mahotas, PIL, Flask
+- Add to `README.md`: example test run, images, and theory behind it
+- Edit `README.md`: ensure instructions actually work... ugh I hate instructions that don't work.
