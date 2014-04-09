@@ -5,7 +5,7 @@
 2. Install [pip](http://www.pip-installer.org/en/latest/installing.html)
     - On Ubuntu: `sudo apt-get install python-pip`
     - On Windows, OS X, or Ubuntu: 
-        1. First, download [get-pip.py](https://raw.github.com/pypa/pip/master/contrib/get-pip.py)
+        1. First, download [get-pip.py](https://raw.github.com/pypa/pip/master/contrib/get-pip.py) (`$ curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py`)
         2. Then run `$ python get-pip.py`
 3. `$ pip install -r requirements.txt` (may require `sudo`)
 
