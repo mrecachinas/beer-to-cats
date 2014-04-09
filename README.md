@@ -14,15 +14,16 @@ Try the [SimpleCV](https://github.com/sightmachine/simplecv#installation) github
 
 <h2>Usage</h2>
 There are two primary ways to use the project:
+
 1. Run the program via the command line and input images as command line parameters.
-```
-$ python beer_to_cats.py <image.{png,jpg,jpeg,gif}> <optional threshold value>
-```
+    ```
+    $ python beer_to_cats.py <image.{png,jpg,jpeg,gif}> <optional threshold value>
+    ```
 
 2. Run the program on the webapp we've created. You can do that either by navigating to [Our Site](www.yolo.me) or executing the following commands:
-```
-$ python yolocups.py
- * Running on http://127.0.0.1:5000/
- * Restarting with reloader
-```
+    ```
+    $ python yolocups.py
+     * Running on http://127.0.0.1:5000/
+     * Restarting with reloader
+    ```
 Then navigate to http://127.0.0.1:5000/ and follow the instructions on the website as you would otherwise.
