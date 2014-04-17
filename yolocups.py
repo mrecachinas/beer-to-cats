@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, redirect
 from flask import render_template
 
 app = Flask(__name__)
