@@ -16,6 +16,10 @@ def demo():
 def theory():
 	return render_template('theory.html')
 
+@app.route('/yolo')
+def yolo():
+	return redirect("http://www.youtube.com/watch?v=z5Otla5157c", code=302)
+
 @app.errorhandler(404)
 def page_not_found(e):
 	return render_template('index.html'), 404
