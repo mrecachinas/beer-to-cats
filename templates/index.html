@@ -13,17 +13,23 @@
 </head>
 <body>
 	<h1>Yolo Cups</h1>
+    <div class="catz"></div>
 	<div class="wrapper">
-		<div class="fileUpload btn btn-primary">
-    		<span>Upload</span>
+		  
+    		
             <form action="/uploads" method="POST" enctype="multipart/form-data">
+            <div class="fileUpload btn btn-primary">
+            <span>Choose File</span>
     		  <input type=file class="upload" accept="image/gif, image/jpeg, image/png" name="file"/>
-              <input type=submit value=Upload>
+            </div>
+            <div class="fileUpload btn btn-primary">
+              <input type=submit value=Upload />
+            </div>
             </form>
-		</div>
+		
 	</div>
 	<img id="blah" src="#" alt="your image" />
-	<footer>Made with ❤ by <a href="http://www.github.com/mrecachinas" target="_">mrecachinas</a>, <a href="http://www.github.com/gottagitgit" target="_">gottagitgit</a>, <a href="http://www.github.com/jb6zb" target="_">jb6zb</a><br>Want a <a href="demo">demo</a>? Want the <a href="theory">theory</a>?</footer>
+	<footer>Made with ❤ by <a href="http://www.github.com/mrecachinas" target="_">mrecachinas</a>, <a href="http://www.github.com/gottagitgit" target="_">gottagitgit</a>, <a href="http://www.github.com/jb6zb" target="_">jb6zb</a><br><!-- Want a <a href="demo">demo</a>? Want the <a href="theory">theory</a>? --></footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="../static/js/script.js"></script>
 </body>

@@ -51,6 +51,33 @@ h1 {
 	filter: alpha(opacity=0);
 }
 
+.catz {
+	height:200px;
+	width:200px;
+	background:url('../img/cat-solo-cup.png') no-repeat;
+	margin:0 auto;
+
+}
+/*<img src="../static/img/cat-solo-cup.png" alt="LOLOLOLOL">*/
+
+input[type="submit"] {
+    /*-moz-appearance: button;*/
+    /*-moz-binding: none;*/
+    -moz-box-sizing: border-box;
+    -moz-user-select: none;
+    background:#3ed585!important;
+    border: none;
+    color: white;
+    cursor: default;
+    font: -moz-button;
+    line-height: normal;
+    padding: 0 6px;
+    text-align: center;
+    text-shadow: none;
+    white-space: pre;
+    outline:0;
+}
+
 .btn-primary {
 	background:#3ed585!important;
 	font-family:'Comic Neue'!important;

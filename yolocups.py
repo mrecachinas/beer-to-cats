@@ -37,7 +37,7 @@ def upload_file():
             new_img.save(app.config['UPLOAD_FOLDER']+"test-"+filename)
             # file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('uploaded_file', filename="test-"+filename))
-    return 
+    return redirect(url_for('yolocups'))
 
 @app.route('/show/<filename>')
 def uploaded_file(filename):
