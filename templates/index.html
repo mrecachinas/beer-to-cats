@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-    <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="../static/img/favicon.png" rel="icon" type="image/x-icon" />
 </head>
 <body>
 	<h1>Yolo Cups</h1>
 	<div class="wrapper">
 		<div class="fileUpload btn btn-primary">
     		<span>Upload</span>
-    		<input type="file" class="upload" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);"/>
+            <form action="" method="POST" enctype="multipart/form-data">
+    		  <input type=file class="upload" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" name="file"/>
+            </form>
 		</div>
 	</div>
 	<img id="blah" src="#" alt="your image" />
