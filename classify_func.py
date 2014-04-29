@@ -8,7 +8,7 @@ import numpy as np
 # print "\nTest1 accuracy: ", dlib.test_simple_object_detector('/home/jyotiska/Dropbox/Computer Vision/cupdataset_2_test.xml',"cupdetector_2.svm")
 # print "\nTraining accuracy: ", dlib.test_simple_object_detector('/home/jyotiska/Dropbox/Computer Vision/cupdataset_3.xml',"cupdetector_3.svm")
 
-detector = dlib.simple_object_detector("cupdetector_2.svm")
+detector = dlib.simple_object_detector("cupdetector_4.svm")
 
 # win_det = dlib.image_window()
 # win_det.set_image(detector)
