@@ -56,7 +56,7 @@ How the computer sees it:
 
 After computing the HOG of the image:
 
-- Mathematica Overlayed HOG Representation
+- Overlayed HOG Representation (computed using Mathematica)
 
     - ![SoloCupComputer](/Desktop/solo-visible-gradient.png)
 
