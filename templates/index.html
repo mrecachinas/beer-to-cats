@@ -16,8 +16,9 @@
 	<div class="wrapper">
 		<div class="fileUpload btn btn-primary">
     		<span>Upload</span>
-            <form action="" method="POST" enctype="multipart/form-data">
-    		  <input type=file class="upload" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" name="file"/>
+            <form action="/uploads" method="POST" enctype="multipart/form-data">
+    		  <input type=file class="upload" accept="image/gif, image/jpeg, image/png" name="file"/>
+              <input type=submit value=Upload>
             </form>
 		</div>
 	</div>
