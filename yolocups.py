@@ -1,5 +1,9 @@
-from flask import Flask, redirect, render_template, request
+import os
+from flask import Flask, redirect, render_template, request, url_for, send_from_directory
 from werkzeug.utils import secure_filename
+from PIL import Image
+from skimage import io
+from classify_func import classify
 
 app = Flask(__name__)
 
@@ -27,9 +31,21 @@ def upload_file():
             filename = secure_filename(file.filename)
 
             # Work with file here, redirect to a results page with processed image in template
+            print "Hello"
+            img = io.imread(file.stream)
+            new_img = classify(img)
+            new_img.save(app.config['UPLOAD_FOLDER']+"test-"+filename)
+            # file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            return redirect(url_for('uploaded_file', filename="test-"+filename))
+    return 
 
-            return "Successfully uploaded " + str(filename)
-    return ''
+@app.route('/show/<filename>')
+def uploaded_file(filename):
+    return render_template('classified.html', filename=filename)
+
+@app.route('/uploads/<filename>')
+def send_file(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
 @app.route('/demo')

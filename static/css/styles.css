@@ -61,6 +61,14 @@ h1 {
 	margin-bottom:20px;
 }
 
+#output {
+	margin-bottom:20px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
 #bill {
 	margin-bottom:20px;
 }
