@@ -1,7 +1,4 @@
-import Image
-import dlib
-import random
-import os
+import os,sys,Image,dlib,random
 from skimage import io
 import numpy as np
 
@@ -28,7 +25,7 @@ def classify(img):
     y = d.top()
     width = d.right() - x
     height = d.bottom() - y
-    print "  detection position left,top,right,bottom:", d.left(), d.top(), d.right(), d.bottom()
+    print ">> detection position left,top,right,bottom:", d.left(), d.top(), d.right(), d.bottom()
 
     r = random.randint(0,len(items)-1)
     random_item = Image.open(assorted_dir+"/"+items[r])
@@ -37,3 +34,12 @@ def classify(img):
     background.paste(resized, (d.left()-12,d.top()-10), resized)
   return background
 
+if __name__ == '__main__':
+  if len(sys.argv) != 2:
+    print 'Usage: python '+sys.argv[0]+' <image.{png,jpg,jpeg,gif}>'
+    sys.exit()
+  in_image = sys.argv[1]
+  in_img = io.imread(in_image)
+  out_img = classify(in_img)
+  out_img.save(in_image.split('.')[0]+'-out.jpg')
+  out_img.show()

@@ -17,10 +17,10 @@ There are two primary ways to use the project:
 
 1. Run the program via the command line and input images as command line parameters.
     ```
-    $ python beer_to_cats.py <image.{png,jpg,jpeg,gif}> <optional threshold value>
+    $ python beer_to_cats.py <image.{png,jpg,jpeg,gif}>
     ```
 
-2. Run the program on the webapp we've created. You can do that either by navigating to [BeerToCats.com](http://www.BeerToCats.com) or executing the following commands:
+2. Run the program on the webapp we've created. You can do that ~~either by navigating to [BeerToCats.com](http://www.BeerToCats.com)~~ (Edit: we've been having issues with pip and Heroku, so we're currently moving to an EC2 instance) by executing the following commands:
     ```
     $ python yolocups.py
      * Running on http://127.0.0.1:5000/
@@ -29,7 +29,21 @@ There are two primary ways to use the project:
 Then navigate to http://127.0.0.1:5000/ and follow the instructions on the website as you would otherwise.
 
 ##Demo##
+Input:
 
+![IceCream](/Desktop/anat-ice-cream.jpg)
+
+Output:
+
+![Covered](/test-anat-ice-cream.jpg)
+
+Input:
+
+![Covered](/test-anat-ice-cream.jpg)
+
+Output:
+
+![IceCream](/Desktop/anat-ice-cream.jpg)
 
 ##Theory##
 Let's say we have the following image where we want to find all of the solo cups and cover them with a cat. We will refer to this image in the following paragraphs.
@@ -70,12 +84,9 @@ These are fed into the SVM, with all of the possible orientations replicated and
 
 ###What's a Support Vector Machine (SVM)?###
 
-
 ##TODO##
-For the project:
-- Integrate with webapp
+For program:
+- **Known Issue**: program only works currently on jpgs and NOT pngs.
 
 For documentation:
-- Add to `requirements.txt`: Flask
-- Add to `README.md`: example test run, images, and theory behind it
 - Edit `README.md`: ensure instructions actually work... ugh I hate instructions that don't work.
