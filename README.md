@@ -29,26 +29,26 @@ There are two primary ways to use the project:
 Then navigate to http://127.0.0.1:5000/ and follow the instructions on the website as you would otherwise.
 
 ##Demo##
-Input:
+####Input:####
 
-![IceCream](/Desktop/anat-ice-cream.jpg)
+![IceCream](test/anat-ice-cream.jpg)
 
-Output:
+####Output:####
 
-![Covered](/test-anat-ice-cream.jpg)
+![Covered](test/anat-ice-cream-out.jpg)
 
-Input:
+####Input:####
 
-![Covered](/test-anat-ice-cream.jpg)
+![solo](example_pics/Cup.jpg)
 
-Output:
+####Output:####
 
-![IceCream](/Desktop/anat-ice-cream.jpg)
+![solo-out](uploads/test-Cup.jpg)
 
 ##Theory##
 Let's say we have the following image where we want to find all of the solo cups and cover them with a cat. We will refer to this image in the following paragraphs.
 
-![IceCream](/Desktop/anat-ice-cream.jpg)
+![IceCream](test/anat-ice-cream.jpg)
 
 There are several widely-used methods for feature detection – e.g. [Haar-like Feature Detection](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf), [Histogram-of-Oriented Gradient (HOG) Feature Detection](http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf), etc.
 
@@ -56,27 +56,33 @@ For this project, we chose HOG detection. Therefore, we also needed to use a [Su
 
 To get the best results, we need a training set. We peroused the web for images of cans, bottles, and solo cups. Then, since this involves supervised learning, we went through drawing boxes around all of the cans, bottles, and cups. Using the previous image, we end up with the following:
 
-![IceCreamBox](/Desktop/anat-ice-cream-annot.jpg)
+![IceCreamBox](test/anat-ice-cream-annot.jpg)
 
 Once we have a good set of these, we generate an XML file of these images with the box annotations. From this, we then compute the HOG representation of the boxed images. We'll choose the most prominant solo cup for this example.
 
 Before HOG:
 
-![SoloCup](/Desktop/solo.jpg)
+![SoloCup](test/solo.png)
 
 How the computer sees it:
 
-![SoloCup](/Desktop/solo.jpg)
+![SoloCup](test/solo-computer.jpg)
 
 After computing the HOG of the image:
 
 - Overlayed HOG Representation (computed using Mathematica)
 
-    - ![SoloCupComputer](/Desktop/solo-visible-gradient.png)
+![SoloCupComputer](test/solo-visible-gradient.png)
 
-- Pure HOG Representation
+- Pure HOG Representation (computed using Matlab)
 
-    - ![SoloCup](/Desktop/solo-hog.jpg)
+![SoloCupHog](test/solo-hog.png)
+
+- Another Pure HOG Representation (using [MIT's HOGgles](http://web.mit.edu/vondrick/ihog/))
+
+![SoloCupHog](test/solo-hog-mit.jpg)
+
+
 
 These are fed into the SVM, with all of the possible orientations replicated and fed into the SVM as well.
 
