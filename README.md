@@ -89,9 +89,15 @@ These are fed into the SVM, with all of the possible orientations replicated and
 
 ###OK, so What is Histogram of Oriented Gradient (HOG)?###
 
+Coming soon.
+
 ###What's a Support Vector Machine (SVM)?###
 
+Coming soon.
 
+###Results###
+
+In depth analysis of results coming soon.
 
 ###Future Improvements###
 - Train with more images
