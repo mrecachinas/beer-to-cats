@@ -11,6 +11,7 @@
 
 ###Installation Errors?###
 
+We did not experience any issues installing natively. We did experience issues installing PIL on 
 
 ##Usage##
 There are two primary ways to use the project:
@@ -89,6 +90,13 @@ These are fed into the SVM, with all of the possible orientations replicated and
 ###OK, so What is Histogram of Oriented Gradient (HOG)?###
 
 ###What's a Support Vector Machine (SVM)?###
+
+
+
+###Future Improvements###
+- Train with more images
+- Compare with Haar-like feature detection
+- Use neural nets for a deeper learning
 
 ##TODO##
 For program:
