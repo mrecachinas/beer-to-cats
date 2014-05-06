@@ -89,11 +89,15 @@ These are fed into the SVM, with all of the possible orientations replicated and
 
 ###OK, so What is Histogram of Oriented Gradient (HOG)?###
 
-Coming soon.
+The essence of HOG, or any feature descriptors for computer vision revolves around the fact that we want the computer to understand what the object it's looking at. HOG relies on the fact that the local object will be composed of pixels with similar values, while the background will be composed of contrasting pixels. Thus, based on these differences in neighboring pixel values, we we can determine the edge orientation of a particular pixel. The combination of all these histograms represent the actual features.
 
 ###What's a Support Vector Machine (SVM)?###
 
-Coming soon.
+A support vector machine is a common, yet robust, supervised learning classifier. The idea of supervised learning is that given a traning data points each belonging to a particular category, we use a supervised learning model like Support Vector Machine, Logistic Regression, Naïve-Bayes, Neural Networks, Decision Trees, etc. to predict which category a new data point belongs to.
+
+Support Vector Machines take a set of features and maps it to a set of hyperplanes in some high dimensional space. This allows the model to have non-linearity. SVMS are used to maximize the margin of seperation between classes. SVMs use a kernel function that is used to map the data points to fit the maximum-margin hyperplane. Depending on the data, we can use different kernel functions: [Wikipedia - Support Vector Machine](http://en.wikipedia.org/wiki/Support_vector_machine).
+
+For our program, after we transform our image to get the HOG features, we take our window of mxn pixels and reshape it into 1x(mn). Each of the data points in the vector represents a pixel value, which represents a feature for our supervised learning model. The class of each data point is either 1 (for cup) or (-1) for non-cup. With these vectors as our training data, we run a support vector machine with linear kernel to create our model.
 
 ###Results###
 
